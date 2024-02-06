@@ -1,5 +1,6 @@
 import "./register.scss";
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom"
 
 export default function Register() {
     const [email, setEmail] = useState("");
@@ -22,7 +23,9 @@ export default function Register() {
                         alt=""
                         className="logo" />
                     <button className="loginButton">
-                        Sign In
+                        <Link className="link" to="/login" replace>
+                            Sign In
+                        </Link>
                     </button>
                 </div>
             </div>
